@@ -1,2 +1,2 @@
 # NEUQ_Professional-internship
-Professional internship实习日志、项目
+master分支为Professional internship实习日志、项目
