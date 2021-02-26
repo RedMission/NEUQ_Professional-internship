@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>差值表达式</title>
+</head>
+<body>
+    <div id="app">
+
+        我是{{major}}的学习者
+        {{[0,1,2,3,4][1]}}<br/>
+        {{ {name:'Alex',age:20}.name   }}
+        {{ sayHi()  }}
+
+
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{//vue对象的属性
+            major:'java'
+        },
+        methods:{//vue对象的方法，是json对象，依然是个键值对 键：方法名 值：具体的方法
+            sayHi:function(){
+                alert("HELLO VUE!");
+            }
+        }
+    });
+
+</script>
+</html>

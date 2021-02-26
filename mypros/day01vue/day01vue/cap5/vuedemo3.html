@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>watched用法</title>
+</head>
+<body>
+
+<div id="app">
+    {{title}}
+    <input type="text" v-model="title">
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+
+    var v1 = new Vue({
+        el:'#app',
+        data:{
+            title:"watch用法"
+        },
+        watch:{
+            title:function(newValue,oldValue){
+                console.log(newValue+":"+oldValue);
+            }
+        }
+    });
+
+</script>
+</html>

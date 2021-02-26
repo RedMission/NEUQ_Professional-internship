@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff4f7b61-5bf6-470a-8876-3db0af2cb13a" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1duJqdEdbjMkt3AFAvDC8J70Km1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day03vue" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff4f7b61-5bf6-470a-8876-3db0af2cb13a" name="默认更改列表" comment="" />
+      <created>1593269238765</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593269238765</updated>
+      <workItem from="1593269244479" duration="552000" />
+      <workItem from="1593355982620" duration="3357000" />
+      <workItem from="1593414074250" duration="8383000" />
+      <workItem from="1593478153639" duration="7435000" />
+      <workItem from="1593560916751" duration="2590000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="190" key="FileChooserDialogImpl" timestamp="1593563581928">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1593563581928" />
+    <state x="775" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1593561003934">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="775" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1593561003934" />
+    <state x="518" y="175" key="run.anything.popup" timestamp="1593480814799">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="518" y="175" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1593480814799" />
+  </component>
+</project>

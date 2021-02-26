@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app1">
+        这是title：{{title}}
+        <button type="button" @click="toUpCase">点我变大写</button>
+        <hr/>
+        这是computed，变小写：{{toLowerCase}}
+    </div>
+
+    <div id="app2">
+        <hr/>
+        <button type="button" @click="changeOtherVueTitle">点我改掉title</button>
+        <button type="button" @click="m1">调用v1中的方法</button>
+    </div>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+<script>
+    var v2 = new Vue({
+        el:'#app2',
+        methods:{
+            changeOtherVueTitle:function(){
+                v1.title = "Hello Java!"
+            },
+            m1:function(){
+                v1.toUpCase();
+            }
+        }
+    });
+
+
+    var v1 =  new Vue({
+        el:'#app1',
+        data:{
+            title:"EEEeee"
+        },
+        methods:{
+            toUpCase:function(){
+                this.title =  this.title.toUpperCase();
+            }
+        },
+        computed:{
+            toLowerCase:function(){
+               return this.title.toLowerCase()
+            }
+        },
+    })
+
+
+</script>
+
+</html>

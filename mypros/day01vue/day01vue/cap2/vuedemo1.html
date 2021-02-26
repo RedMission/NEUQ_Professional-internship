@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>差值表达式</title>
+</head>
+<body>
+    <div id="app">
+        请输入您的专业：<input type="text" v-model="major"  />
+        =======================<br/>
+        我是一位{{major}}的程序员
+        {{[0,1,2,3,4][1]}}<br/>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            major:'java'
+        },
+    });
+
+</script>
+</html>

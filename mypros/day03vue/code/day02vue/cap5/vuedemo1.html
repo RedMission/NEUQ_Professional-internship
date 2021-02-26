@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app1">
+        {{title}}
+
+        <button type="button" @click="toUpCase">点我</button>
+
+        {{toLowerCase}}
+    </div>
+
+    <div id="app2">
+        <button type="button" @click="changeOtherVueTitle">点我</button>
+        <button type="button" @click="m1">调用v1中的方法</button>
+    </div>
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+<script>
+    var v2 = new Vue({
+        el:'#app2',
+        methods:{
+            changeOtherVueTitle:function(){
+                v1.title = "Hello Java!"
+            },
+            m1:function(){
+                v1.toUpCase();
+            }
+        }
+
+    });
+
+
+
+    var v1 =  new Vue({
+
+        el:'#app1',
+        data:{
+
+            title:"HELLO VUE"
+
+        },
+        methods:{
+            toUpCase:function(){
+                this.title =  this.title.toUpperCase();
+            }
+        },
+        computed:{
+            toLowerCase:function(){
+               return this.title.toLowerCase()
+            }
+        },
+        watch:{
+            title:function(n,o){
+                console.log(n+":"+o);
+            }
+        }
+
+
+    })
+
+
+</script>
+
+</html>

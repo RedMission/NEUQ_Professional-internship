@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>差值表达式</title>
+</head>
+<body>
+    <div id="app">
+        请输入您的专业：<input type="text" @input="changeMajor"  />
+        我是一位{{major}}的学习者
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+            data:{
+                major:'java'
+            },
+            methods:{
+                changeMajor:function(event){
+                    // console.log(event.target.value)
+                    this.major = event.target.value;
+                }
+        }
+    });
+
+</script>
+</html>

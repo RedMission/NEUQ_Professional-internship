@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        欢迎{{age}}大的{{name}}
+    </div>
+    <div id="app1">
+        欢迎{{age}}大的{{name}}
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+    new Vue({
+
+        el:'#app',//elemen
+        data:{
+            name:'Alex',//以后，数据就是通过发送ajax请求，来获得的。
+            age:18
+        }
+    });//json格式的对象  使用大括号包裹，里面放了键值对，在js中键可以没有引号,多个键值对之间使用‘,’分隔。
+</script>
+</html>

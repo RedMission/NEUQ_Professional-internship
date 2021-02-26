@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue中的事件修饰符</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" @keyup.space="mykeyupfn">
+    </div>
+
+
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+<script>
+
+  new Vue({
+      el:'#app',
+      data:{
+
+      },
+     methods:{
+          mykeyupfn:function(){
+              console.log("hello vue!");
+          }
+     }
+
+
+
+
+
+  });
+
+</script>
+
+
+</html>

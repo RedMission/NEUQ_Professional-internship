@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app1">
+
+    </div>
+
+    <div id="app2">
+        {{mtitle}}
+        <button type="button" @click="showVueObject">点我</button>
+    </div>
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+<script>
+
+    var v1 =  new Vue({
+
+        el:'#app1',
+        data:{
+            title:'vuetitle'
+        }
+
+    })
+
+    var data = {
+        mtitle:"hello js"
+    }
+
+
+
+    var v2 = new Vue({
+        el:'#app2',
+        data:data,
+        methods:{
+            showVueObject:function(){
+                console.log(v1);
+            }
+        }
+
+
+    });
+
+
+
+
+
+
+</script>
+
+</html>

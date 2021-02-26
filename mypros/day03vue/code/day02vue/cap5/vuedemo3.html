@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+    <div id="app2">
+        <button type="button" ref="mybtn1" @click="showVueObject">点我</button>
+        <button type="button" ref="mybtn2" @click="showVueObject">点我</button>
+    </div>
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+<script>
+
+
+
+    var v2 = new Vue({
+        el:'#app2',
+
+        methods:{
+            showVueObject:function(){
+                this.$refs.mybtn1.innerHTML = "hello"
+            }
+        }
+
+
+    });
+
+
+
+
+
+
+</script>
+
+</html>

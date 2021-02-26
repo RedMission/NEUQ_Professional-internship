@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue中的事件</title>
+</head>
+<body>
+    <div id="app">
+        {{count>10?'大于10':'不大于10'}}<br/>
+        {{count}}<br/>
+        <button type="button" @click="addbtnfn(2)" >增加</button>
+        <button type="button" @click="relsbtnfn(2)" >减少</button>
+
+        <input type="text" v-model="mystep">
+
+        <p v-on:mousemove="mymo">
+           今天是周一.!!!
+            {{x}}<br/>
+            {{y}}
+
+            <span @mousemove.stop>停止鼠标移动的事件</span>
+       </p>
+    </div>
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+
+<script>
+  new Vue({
+      el:'#app',
+      data:{
+          count:0,
+          mystep:1,
+          x:0,
+          y:0
+      },
+      methods:{
+          addbtnfn:function(){
+              count+=this.mystep-0;
+          },
+          relsbtnfn:function(step){
+              this.count-=step;
+          },
+          mymo:function(event){
+            this.x = event.clientX;
+            this.y = event.clientY;
+            console.log(event)
+          },
+          mystopmo:function(event){
+              event.stopPropagation();
+          }
+      }
+  });
+
+</script>
+
+
+</html>

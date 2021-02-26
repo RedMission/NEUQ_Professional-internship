@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遍历对象</title>
+</head>
+<body>
+
+<div id="app">
+
+    <ul>
+        <li v-for="value in student">{{value}}</li>
+    </ul>
+    <hr/>
+
+    <ul>
+        <li v-for="(v,k,i) in student">{{i}}--{{k}}--{{v}}</li>
+    </ul>
+
+    <hr/>
+
+
+
+
+</div>
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+
+    new Vue({
+        el:'#app',
+        data:{
+            args:[1,2,3,4,5,6],
+            students:{
+                name:'xiaoming',
+                age:20
+            }
+        }
+    });
+
+</script>
+</html>

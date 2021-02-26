@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chrome 滚动条优化 */
+*{
+    &::-webkit-scrollbar{
+         width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+         height: 8px;
+     }
+    &::-webkit-scrollbar-thumb{
+         border-radius: 8px;
+         background-color: hsla(220, 4%, 58%, .3);
+         transition: background-color .3s;
+         &:hover{
+              background: #bbb;
+          }
+     }
+    &::-webkit-scrollbar-track{
+         background: #EDEDED;
+     }
+}

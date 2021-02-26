@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .mydiv{
+            width: 400px;
+            height: 220px;
+            background-color: gray;
+        }
+
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .mywidth{
+            width:450px;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <div v-bind:class="{red:temp}" class="mydiv"></div>
+        <hr/>
+        <div :class="myClassStyle" class="mydiv"></div>
+        <hr/>
+        <div :class="mycolor" class="mydiv"></div>
+
+        <button type="button" @click="temp=!temp">点我</button>
+        <input type="text" v-model="mycolor">
+    </div>
+
+
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+<script>
+    //v-bind:class="{red:true}==> class="red"
+    //div class="green"
+    new Vue({
+        el:'#app',
+        data:{
+            temp:false,
+            mycolor:'green'
+        },
+        computed:{
+            myClassStyle:function(){
+                return {
+                    red:this.temp,
+                    mywidth:this.temp
+
+                }
+
+            }
+
+        }
+    })
+
+</script>
+</html>
